@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "product-mgmt": "apps/product-mgmt",
+    "product-mgmt-e2e": "apps/product-mgmt-e2e"
+  }
+}
