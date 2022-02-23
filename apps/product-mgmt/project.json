@@ -2,11 +2,13 @@
   "projectType": "application",
   "root": "apps/product-mgmt",
   "sourceRoot": "apps/product-mgmt/src",
-  "prefix": "fullstack-angular",
+  "prefix": "pm",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/product-mgmt",
         "index": "apps/product-mgmt/src/index.html",
@@ -18,7 +20,9 @@
           "apps/product-mgmt/src/favicon.ico",
           "apps/product-mgmt/src/assets"
         ],
-        "styles": ["apps/product-mgmt/src/styles.scss"],
+        "styles": [
+          "apps/product-mgmt/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -83,7 +87,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/product-mgmt"],
+      "outputs": [
+        "coverage/apps/product-mgmt"
+      ],
       "options": {
         "jestConfig": "apps/product-mgmt/jest.config.js",
         "passWithNoTests": true
